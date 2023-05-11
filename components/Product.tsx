@@ -9,7 +9,7 @@ function Product({ product }: Props) {
 	return (
 		<Link
 			href={`/product/${product.id}`}
-			className='h-96 p-4 flex flex-col gap-4 bg-slate-50  rounded-md border group hover:scale-105 transition-transform ease-out duration-200'
+			className='h-96 p-4 flex flex-col gap-4 bg-slate-50 rounded-md  border group hover:scale-105 transition-transform ease-out duration-200'
 		>
 			<div className='relative flex-1'>
 				<ProductImage product={product} fill />

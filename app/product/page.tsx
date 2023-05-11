@@ -1,9 +1,7 @@
-import { FC } from 'react';
+import React from 'react';
 
-interface ProductProps {}
-
-const Product: FC<ProductProps> = ({}) => {
-	return <section>Product</section>;
+const product = () => {
+	return <div className='ct py-10'>product</div>;
 };
 
-export default Product;
+export default product;
