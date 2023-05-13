@@ -14,7 +14,7 @@ const productPage = async ({ params: { productId } }: productPageProps) => {
 
 		return (
 			<section className='ct py-10'>
-				<div className=' max-w-5xl mx-auto flex gap-12 p-8 mt-12 bg-slate-50 rounded-md border-b border-slate-200'>
+				<div className=' max-w-5xl mx-auto flex gap-12 p-8 mt-12 bg-slate-50 rounded-md border border-slate-200'>
 					<ProductImage product={product} />
 
 					<div className='divide-y mt-16'>

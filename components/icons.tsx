@@ -19,6 +19,7 @@ import {
 	Trash,
 	User,
 	LucideArrowRight,
+	Star,
 	X,
 	type Icon as LucideIcon,
 } from 'lucide-react';
@@ -45,6 +46,7 @@ export const Icons = {
 	help: HelpCircle,
 	pizza: Pizza,
 	check: Check,
+	stars: Star,
 	ArrowRight: LucideArrowRight,
 	gitHub: ({ ...props }: LucideProps) => (
 		<svg
