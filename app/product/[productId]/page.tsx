@@ -14,17 +14,17 @@ const productPage = async ({ params: { productId } }: productPageProps) => {
 
 		return (
 			<section className='ct py-10'>
-				<div className=' max-w-5xl mx-auto flex gap-12 p-8 mt-12 bg-slate-50 rounded-md border border-slate-200'>
+				<div className='max-w-5xl mx-auto flex gap-12 p-8 mt-12'>
 					<ProductImage product={product} />
 
-					<div className='divide-y mt-16'>
+					<div className='divide-y'>
 						<div className='space-y-2 pb-8'>
-							<h2 className='text-2xl md:text-4xl font-bold'>
+							<h1 className='text-2xl md:text-4xl font-bold'>
 								{product.title}
-							</h2>
-							<p className='text-slate-800 text-xl md:text-3xl font-extrabold'>
+							</h1>
+							<h2 className='text-gray-500 font-bold text-xl md:text-3xl'>
 								${product.price}
-							</p>
+							</h2>
 						</div>
 
 						<div className='pt-8'>
