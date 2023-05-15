@@ -48,7 +48,7 @@ export default function RootLayout({
 				</div>
 				<div className='flex flex-col min-h-screen overflow-hidden relative z-10'>
 					<Navbar />
-					<main className='flex-grow'>{children}</main>
+					<main className='flex-grow py-16'>{children}</main>
 				</div>
 			</body>
 		</html>

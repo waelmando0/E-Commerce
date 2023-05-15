@@ -1,4 +1,5 @@
 import Product from '@/components/Product';
+import ProductList from '@/components/product-list';
 
 const page = async () => {
 	const res = await fetch('https://fakestoreapi.com/products');
@@ -10,11 +11,11 @@ const page = async () => {
 				DEALS OF THE DAY
 			</h1>
 
-			<div className='py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10 gap-x-6 lg:gap-x-8'>
+			<ProductList>
 				{products.map((product) => (
 					<Product key={product.id} product={product} />
 				))}
-			</div>
+			</ProductList>
 		</section>
 	);
 };

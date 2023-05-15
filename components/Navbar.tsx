@@ -3,34 +3,30 @@ import { FC } from 'react';
 import { Icons } from './icons';
 import { siteConfig } from '@/config/site';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import Button from './ui/button';
 
 interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
-	const pathname = usePathname();
-
 	return (
-		<header className='border border-b border-slate-200'>
-			<div className='ct py-2 flex items-center justify-between'>
-				<Link href='/' className='flex items-center space-x-2'>
+		<header className='border-b border-slate-200 bg-white fixed top-0 z-50 w-full'>
+			<nav className='ct h-16 flex items-center justify-between gap-4'>
+				<Link href='/' className='flex items-center gap-2'>
 					<Icons.logo className='h-5 w-5' />
-					<span className='hidden font-bold sm:inline-block'>
+					<span className='hidden font-bold md:inline-block'>
 						{siteConfig.name}
 					</span>
 				</Link>
-				<nav>
-					<ul className='flex items-center gap-2'>
-						<Button size='sm' variant='subtle'>
-							<Link href='/signIn'>Log In</Link>
-						</Button>
-						<Button size='sm'>
-							<Link href='/signUp'>Register</Link>
-						</Button>
-					</ul>
-				</nav>
-			</div>
+
+				<div className='hidden gap-2 sm:flex'>
+					<Button size='sm' variant='subtle'>
+						<Link href='/signIn'>Log In</Link>
+					</Button>
+					<Button size='sm'>
+						<Link href='/signUp'>Register</Link>
+					</Button>
+				</div>
+			</nav>
 		</header>
 	);
 };
