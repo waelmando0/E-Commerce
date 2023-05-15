@@ -28,6 +28,7 @@ function Product({ product }: Props) {
 						/>
 						<div className='flex h-4 items-center space-x-1 text-xs text-muted-foreground md:space-x-2'>
 							<span>{product.rating.rate}</span>
+							<span className='text-foreground/30'>|</span>
 							<span>{product.rating.count} Sold out</span>
 						</div>
 					</div>

@@ -39,8 +39,7 @@ const ProductImage: FC<ProductImageProps> = ({ product, fill }) => {
 						width={400}
 						height={1000}
 						className={cn(
-							'object-contain duration-700 ease-in-out group-hover:opacity-75',
-
+							'object-contain ease-in-out duration-700 group-hover:opacity-75 rounded-md border bg-white p-4',
 							loading
 								? 'scale-110 blur-2xl grayscale'
 								: 'scale-100 blur-0 grayscale-0'

@@ -60,10 +60,9 @@ function Modal() {
 										<h4 className='font-semibold'>{product?.title}</h4>
 										<p className='font-medium text-sm'>${product?.price}</p>
 
-										<div className='flex items-center text-sm my-4'>
-											<p>{product?.rating.rate}</p>
+										<div className='flex items-center text-sm my-4 gap-2'>
 											{product?.rating.rate && (
-												<div className='flex items-center ml-2 mr-6'>
+												<div className='flex items-center'>
 													{/* Display 5 stars but display the rate ones as StarIconOutline  */}
 													{Array.from(
 														{ length: Math.floor(product.rating.rate) },
@@ -87,9 +86,9 @@ function Modal() {
 													)}
 												</div>
 											)}
-											<p className='text-blue-600 hover:underline cursor-pointer text-xs'>
-												See all {product?.rating.count} reviews
-											</p>
+											<p>{product?.rating.rate}</p>
+											<span className='text-foreground/30'>|</span>
+											<p>See all {product?.rating.count} reviews</p>
 										</div>
 
 										<p className='line-clamp-5 text-sm'>
