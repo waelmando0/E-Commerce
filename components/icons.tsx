@@ -25,6 +25,7 @@ import {
 	SunIcon,
 	Github,
 	Laptop2,
+	ArrowLeft,
 	type Icon as LucideIcon,
 } from 'lucide-react';
 
@@ -47,6 +48,7 @@ export const Icons = {
 	warning: AlertTriangle,
 	user: User,
 	arrowRight: ArrowRight,
+	arrowLeft: ArrowLeft,
 	help: HelpCircle,
 	pizza: Pizza,
 	check: Check,

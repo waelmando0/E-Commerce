@@ -45,18 +45,21 @@ function Modal() {
 				{/* Container to center the panel */}
 				<div className='flex min-h-full items-center justify-center p-4'>
 					{/* The actual dialog panel  */}
-					<Dialog.Panel className='mx-auto max-w-3xl rounded bg-white p-10'>
+					<Dialog.Panel className='mx-auto max-w-3xl rounded-lg bg-white p-2 md:p-4 shadow'>
 						{loading ? (
 							<div className='h-8 w-8 rounded-full border-2 border-dotted border-blue-600 animate-spin' />
 						) : (
 							<div className='flex gap-x-8 h-96'>
 								{product?.image && (
-									<div className='relative w-72 h-full hidden md:inline'>
+									<div className='relative w-1/2 h-full hidden md:inline'>
 										<ProductImage product={product} fill />
 									</div>
 								)}
 								<div className='flex-1 flex flex-col'>
 									<div className='flex-1'>
+										<p className='inline-flex items-center border rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 my-2 bg-foreground text-background'>
+											{product?.category}
+										</p>
 										<h4 className='font-semibold'>{product?.title}</h4>
 										<p className='font-medium text-sm'>${product?.price}</p>
 
@@ -91,7 +94,7 @@ function Modal() {
 											<p>See all {product?.rating.count} reviews</p>
 										</div>
 
-										<p className='line-clamp-5 text-sm'>
+										<p className='line-clamp-5 text-sm '>
 											{product?.description}
 										</p>
 									</div>

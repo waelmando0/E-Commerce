@@ -36,8 +36,7 @@ const ProductImage: FC<ProductImageProps> = ({ product, fill }) => {
 					<Image
 						src={product.image}
 						alt={product.title}
-						width={400}
-						height={1000}
+						fill
 						className={cn(
 							'object-contain ease-in-out duration-700 group-hover:opacity-75 rounded-md border bg-white p-4',
 							loading
