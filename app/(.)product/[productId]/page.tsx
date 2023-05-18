@@ -2,7 +2,7 @@
 
 import ProductImage from '@/components/ProductImage';
 import { Icons } from '@/components/icons';
-import Button from '@/components/ui/button';
+import { Button } from '@/components/ui/button';
 import { Dialog } from '@headlessui/react';
 import { useParams, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';

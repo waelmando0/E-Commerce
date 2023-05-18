@@ -13,7 +13,7 @@ const buttonVariants = cva(
 				destructive: 'bg-red-500 text-white hover:bg-red-600 ',
 				outline: 'bg-transparent border border-slate-200 hover:bg-slate-100 ',
 				subtle: 'bg-slate-100 text-slate-900 hover:bg-slate-200 ',
-				ghost: 'bg-transparent hover:text-foreground hoer:bg-slate-200',
+				ghost: 'bg-transparent hover:text-foreground hover:bg-slate-200',
 				link: 'bg-transparent underline-offset-4 hover:underline text-foreground hover:bg-transparent',
 			},
 			size: {
@@ -56,5 +56,6 @@ const Button: FC<ButtonProps> = ({
 		</button>
 	);
 };
+Button.displayName = 'Button';
 
-export default Button;
+export { Button, buttonVariants };
