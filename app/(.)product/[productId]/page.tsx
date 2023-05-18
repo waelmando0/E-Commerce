@@ -57,7 +57,7 @@ function Modal() {
 								)}
 								<div className='flex-1 flex flex-col'>
 									<div className='flex-1'>
-										<p className='inline-flex items-center border rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 my-2 bg-foreground text-background'>
+										<p className='inline-flex items-center border rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 my-2  bg-slate-800 text-slate-100 '>
 											{product?.category}
 										</p>
 										<h4 className='font-semibold'>{product?.title}</h4>

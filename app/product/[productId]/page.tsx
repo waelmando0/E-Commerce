@@ -29,7 +29,7 @@ const productPage = async ({ params: { productId } }: productPageProps) => {
 				<article className='grid grid-cols-1 gap-6 md:grid-cols-[0.7fr,1fr] md:gap-12 xl:grid-cols-2'>
 					<ProductImage product={product} />
 					<div>
-						<p className='inline-flex items-center border rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 my-2'>
+						<p className='inline-flex items-center border rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 my-2  bg-slate-800 text-slate-100 '>
 							{product.category}
 						</p>
 						<h1 className='mb-2 text-base font-bold md:text-2xl lg:text-2xl'>

@@ -10,9 +10,9 @@ function Product({ product }: Props) {
 	return (
 		<li>
 			<Link href={`/product/${product.id}`}>
-				<article className='z-0 h-full rounded-lg border bg-background p-2 shadow hover:bg-gray-50 dark:hover:bg-gray-900 md:p-4 '>
+				<article className='z-0 h-full rounded-lg border bg-white p-2 shadow hover:bg-gray-50 dark:hover:bg-gray-900 md:p-4 '>
 					<ProductImage product={product} fill />
-					<p className='inline-flex items-center border rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 my-2 bg-foreground text-background'>
+					<p className='inline-flex items-center border rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 my-2 bg-slate-800 text-slate-100 '>
 						{product.category}
 					</p>
 					<h2 className='mb-1 line-clamp-2 text-xs  md:text-sm'>
